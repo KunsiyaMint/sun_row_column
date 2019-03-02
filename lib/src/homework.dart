@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-Widget doraemon = Text('doraemon',style: TextStyle(fontSize: 50.0));
+Widget doraemon = Text(
+  'doraemon', 
+  style: TextStyle(fontSize: 50.0,color: Colors.white),
+  );
 Widget nopita = Text('nopita');
 Widget master = Text('master');
 
@@ -23,24 +26,24 @@ class Homework extends StatelessWidget {
             ),
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[ 
+                children: <Widget>[
                   new Expanded(
-                  child: Container(
-                     padding: EdgeInsets.all(30.0),
-                    alignment: Alignment(0, 0),
-                    color: Colors.blue,
-                    child: nopita,
+                    child: Container(
+                      padding: EdgeInsets.all(30.0),
+                      alignment: Alignment(0, 0),
+                      color: Colors.blue,
+                      child: nopita,
                     ),
                   ),
                   new Expanded(
                     child: Container(
-                    padding: EdgeInsets.all(30.0),
-                    alignment: Alignment(0, 0),
-                    color: Colors.green,
-                    child: master,
-                  ),
+                      padding: EdgeInsets.all(30.0),
+                      alignment: Alignment(0, 0),
+                      color: Colors.green,
+                      child: master,
+                    ),
                   )
-           ])
+                ])
           ],
         ),
       ),
